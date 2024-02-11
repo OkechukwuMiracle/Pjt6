@@ -115,8 +115,8 @@ p {
     h5 {
         font-size: 20px;
     }
-    summary::after {
-        top: 10px;
+    summary {
+        top: 0;
         display: block;
     }
 }

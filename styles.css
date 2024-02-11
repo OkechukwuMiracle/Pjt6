@@ -43,9 +43,12 @@ details {
 }
 
 summary {
-    display: block;
+    /* display: block; */
     position: relative;
+    list-style: none;
 }
+
+/* summary::-webkit-details-marker{display: none;} */
 
 summary::after{
     content: url(assets/images/icon-plus.svg);
@@ -117,6 +120,6 @@ p {
     }
     summary {
         top: 0;
-        display: block;
+        /* display: block; */
     }
 }

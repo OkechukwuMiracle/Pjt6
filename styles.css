@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #2d2d2d;
+}
+
+body {
+    background:  hsl(275, 100%, 97%)50%;
+    width: 100%;
+}
+
+.first {
+    position: absolute;
+    width: 100%;
+}
+
+.parent {
+    background-color: hsl(0, 0%, 100%);
+    top: 0;
+    padding: 20px;
+    margin: 12% 35%;
+    position: absolute;
+    border-radius: 13px;
+    width: 30%;
+}
+
+img {
+    width: 100%;
+}
+
+
+.second {
+    display: flex;
+    gap: 15px;
+    width: 7%;
+}
+
+details {
+    border-top: solid 1px rgb(245, 237, 237);
+    padding: 1.5rem 0;
+}
+
+summary {
+    display: block;
+    position: relative;
+}
+
+summary::after{
+    content: url(assets/images/icon-plus.svg);
+    position: absolute;
+    top: -5px;
+    right: 2%;
+    width: 10px;
+}
+
+details[open] summary::after{
+    content: url(assets/images/icon-minus.svg);
+    position: absolute;
+    top: -5px;
+    right: 2%;
+    width: 10px;
+}
+
+h5 {
+    font-weight: 600;
+}
+
+details:hover {
+    cursor: pointer;
+}
+
+h5:hover {
+    color: hsl(293, 60%, 48%);
+}
+
+p {
+    font-size: 12px;
+    font-weight: 500;
+    margin-top: 5px;
+    color: hsl(292, 16%, 49%);
+    gap: 10px
+}
+
+/* media query */
+@media screen and (max-width: 1330px) {
+    .parent {
+        width: 40%;
+        align-items: center;
+    }
+    
+}
+
+@media screen and (max-width: 885px) {
+    .parent {
+        width: 40%
+        
+    }
+    h5 {
+        font-size: 20px;
+    }
+    p {
+        font-size: 15px
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .parent {
+        width: 80%;
+        margin: 12% 10%;
+        /* padding: 10px; */
+        /* align-items: center; */
+    }
+    h5 {
+        font-size: 20px;
+    }
+}

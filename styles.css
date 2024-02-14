@@ -8,7 +8,7 @@
 
 body {
     background:  hsl(275, 100%, 97%)50%;
-    width: 100%;
+    /* width: 100%; */
 }
 
 .first {
@@ -23,7 +23,7 @@ body {
     margin: 12% 35%;
     position: absolute;
     border-radius: 13px;
-    width: 30%;
+    /* width: 30%; */
 }
 
 img {
@@ -124,14 +124,14 @@ p {
     }
     summary {
         top: 0;
-        padding-right: 30px;
+        padding-right: 50px;
     }
 }
 
 @media screen and (max-width: 640px) {
     .parent {
-        width: 80%;
-        margin: 12% 10%;
+        width: 90%;
+        margin: 12% 5%;
     }
     .first {
         display: none;
@@ -145,6 +145,6 @@ p {
     }
     summary {
         top: 0;
-        padding-right: 85px;
+        padding-right: 75px;
     }
 }

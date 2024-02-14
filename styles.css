@@ -35,6 +35,15 @@ img {
     display: flex;
     gap: 15px;
     width: 7%;
+    /* border-bottom: none; */
+}
+
+.third {
+    display: none;
+}
+
+.four {
+    border-top-color: transparent;
 }
 
 details {
@@ -43,27 +52,28 @@ details {
 }
 
 summary {
-    /* display: block; */
+    display: block;
     position: relative;
-    list-style: none;
 }
 
-/* summary::-webkit-details-marker{display: none;} */
+
 
 summary::after{
     content: url(assets/images/icon-plus.svg);
     position: absolute;
-    top: -5px;
+    top: -8px;
     right: 2%;
     width: 10px;
+    scale: 65%;
 }
 
 details[open] summary::after{
     content: url(assets/images/icon-minus.svg);
     position: absolute;
-    top: -5px;
+    top: -8px;
     right: 2%;
     width: 10px;
+    scale: 65%;
 }
 
 h5 {
@@ -90,15 +100,21 @@ p {
 @media screen and (max-width: 1330px) {
     .parent {
         width: 40%;
-        align-items: center;
     }
     
 }
 
-@media screen and (max-width: 885px) {
+@media screen and (max-width: 900px) {
     .parent {
-        width: 40%
-        
+        width: 60%;
+        margin: 12% 20%;
+    }
+    .first {
+        display: none;
+    }
+    .third {
+        display: block;
+        width: 100%;
     }
     h5 {
         font-size: 20px;
@@ -106,20 +122,29 @@ p {
     p {
         font-size: 15px
     }
+    summary {
+        top: 0;
+        padding-right: 30px;
+    }
 }
 
 @media screen and (max-width: 640px) {
     .parent {
         width: 80%;
         margin: 12% 10%;
-        /* padding: 10px; */
-        /* align-items: center; */
+    }
+    .first {
+        display: none;
+    }
+    .third {
+        display: block;
+        width: 100%;
     }
     h5 {
         font-size: 20px;
     }
     summary {
         top: 0;
-        /* display: block; */
+        padding-right: 85px;
     }
 }

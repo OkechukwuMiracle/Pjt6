@@ -23,7 +23,6 @@ body {
     margin: 12% 35%;
     position: absolute;
     border-radius: 13px;
-    /* width: 30%; */
 }
 
 img {
@@ -35,7 +34,6 @@ img {
     display: flex;
     gap: 15px;
     width: 7%;
-    /* border-bottom: none; */
 }
 
 .third {
